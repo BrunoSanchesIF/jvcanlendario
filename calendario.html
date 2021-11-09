@@ -1,0 +1,234 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSScalend.css"></head>
+<body>
+
+<script language="javascript">
+
+var umaData, ano, mes, d, corfnt, corfdo;
+
+ano = parseInt(window.prompt("Qual ano?"));
+mes = parseInt(window.prompt("Qual mes?"));
+
+umaData = new Date();
+umaData.setDate(1);
+umaData.setMonth(mes-1);
+umaData.setFullYear(ano);
+
+document.write("<br>");
+
+document.write("<table border=3 class='lacuna2'>");
+
+for(d=2; d<=8; ++d)
+{
+
+   if (umaData.getDay()==0)
+     {
+      corfdo="red";
+      corfnt="white";
+     }
+   else
+     {
+      corfdo="white";
+      corfnt="red";
+     }
+   document.write("<tr bgcolor=" + corfdo + ">");
+   document.write("<td width=200 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">" + 
+                  umaData.getDate() + "/" + 
+                  (umaData.getMonth()+1) + "/" + 
+                  umaData.getFullYear() + "</font>");
+   document.write("</td>");
+   document.write("<td width=100 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">");
+   switch (umaData.getDay())
+   {
+     case 0: document.write("Dom"); break;
+     case 1: document.write("Seg"); break;
+     case 2: document.write("Ter"); break;
+     case 3: document.write("Qua"); break;
+     case 4: document.write("Qui"); break;
+     case 5: document.write("Sex"); break;
+     case 6: document.write("Sab"); break;
+   }
+   document.write("</font>");
+   document.write("</td>");
+
+   document.write("</tr>");
+
+   umaData.setDate(d);
+}
+document.write("</table>");
+
+document.write("<table border=3 class='lacuna2'>");
+
+for(d=9; d<=15; ++d)
+{
+
+   if (umaData.getDay()==0)
+     {
+      corfdo="red";
+      corfnt="white";
+     }
+   else
+     {
+      corfdo="white";
+      corfnt="red";
+     }
+   document.write("<tr bgcolor=" + corfdo + ">");
+   document.write("<td width=200 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">" + 
+                  umaData.getDate() + "/" + 
+                  (umaData.getMonth()+1) + "/" + 
+                  umaData.getFullYear() + "</font>");
+   document.write("</td>");
+   document.write("<td width=100 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">");
+   switch (umaData.getDay())
+   {
+     case 0: document.write("Dom"); break;
+     case 1: document.write("Seg"); break;
+     case 2: document.write("Ter"); break;
+     case 3: document.write("Qua"); break;
+     case 4: document.write("Qui"); break;
+     case 5: document.write("Sex"); break;
+     case 6: document.write("Sab"); break;
+   }
+   document.write("</font>");
+   document.write("</td>");
+
+   umaData.setDate(d);
+}
+document.write("</table>");
+
+document.write("<table border=3 class='lacuna2'>");
+for(d=16; d<=22; ++d)
+{
+
+   if (umaData.getDay()==0)
+     {
+      corfdo="red";
+      corfnt="white";
+     }
+   else
+     {
+      corfdo="white";
+      corfnt="red";
+     }
+   document.write("<tr bgcolor=" + corfdo + ">");
+   document.write("<td width=200 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">" + 
+                  umaData.getDate() + "/" + 
+                  (umaData.getMonth()+1) + "/" + 
+                  umaData.getFullYear() + "</font>");
+   document.write("</td>");
+   document.write("<td width=100 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">");
+   switch (umaData.getDay())
+   {
+     case 0: document.write("Dom"); break;
+     case 1: document.write("Seg"); break;
+     case 2: document.write("Ter"); break;
+     case 3: document.write("Qua"); break;
+     case 4: document.write("Qui"); break;
+     case 5: document.write("Sex"); break;
+     case 6: document.write("Sab"); break;
+   }
+   document.write("</font>");
+   document.write("</td>");
+
+   document.write("</tr>");
+
+   umaData.setDate(d);
+}
+document.write("</table>");
+
+document.write("<table border=3 class='lacuna2'>");
+for(d=23; d<=29; ++d)
+{
+
+   if (umaData.getDay()==0)
+     {
+      corfdo="red";
+      corfnt="white";
+     }
+   else
+     {
+      corfdo="white";
+      corfnt="red";
+     }
+   document.write("<tr bgcolor=" + corfdo + ">");
+   document.write("<td width=200 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">" + 
+                  umaData.getDate() + "/" + 
+                  (umaData.getMonth()+1) + "/" + 
+                  umaData.getFullYear() + "</font>");
+   document.write("</td>");
+   document.write("<td width=100 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">");
+   switch (umaData.getDay())
+   {
+     case 0: document.write("Dom"); break;
+     case 1: document.write("Seg"); break;
+     case 2: document.write("Ter"); break;
+     case 3: document.write("Qua"); break;
+     case 4: document.write("Qui"); break;
+     case 5: document.write("Sex"); break;
+     case 6: document.write("Sab"); break;
+   }
+   document.write("</font>");
+   document.write("</td>");
+
+   document.write("</tr>");
+
+   umaData.setDate(d);
+}
+document.write("</table>");
+var x = 32;
+if (umaData.getDate <= 30)
+x = 31;
+document.write("<table border=3 class='lacuna2'>");
+for(d=30; d<=x; ++d)
+{
+
+   if (umaData.getDay()==0)
+     {
+      corfdo="red";
+      corfnt="white";
+     }
+   else
+     {
+      corfdo="white";
+      corfnt="red";
+     }
+   document.write("<tr bgcolor=" + corfdo + ">");
+   document.write("<td width=200 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">" + 
+                  umaData.getDate() + "/" + 
+                  (umaData.getMonth()+1) + "/" + 
+                  umaData.getFullYear() + "</font>");
+   document.write("</td>");
+   document.write("<td width=100 align=center>");
+   document.write("<font face=arial size=6 color=" + corfnt + ">");
+   switch (umaData.getDay())
+   {
+     case 0: document.write("Dom"); break;
+     case 1: document.write("Seg"); break;
+     case 2: document.write("Ter"); break;
+     case 3: document.write("Qua"); break;
+     case 4: document.write("Qui"); break;
+     case 5: document.write("Sex"); break;
+     case 6: document.write("Sab"); break;
+   }
+   document.write("</font>");
+   document.write("</td>");
+
+   document.write("</tr>");
+
+   umaData.setDate(d);
+}
+document.write("</table>");
+</script>
+</body>
+
+</html>
